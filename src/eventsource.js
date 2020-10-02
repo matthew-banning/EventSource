@@ -965,7 +965,7 @@
       var requestURL = url;
       if (url.slice(0, 5) !== "data:" && url.slice(0, 5) !== "blob:") {
         if (lastEventId !== "") {
-          requestURL += (url.indexOf("?") === -1 ? "?" : "&") + "lastEventId=" + encodeURIComponent(lastEventId);
+          requestURL += (url.indexOf("?") === -1 ? "?" : "&") + "Last-Event-ID=" + encodeURIComponent(lastEventId);
         }
       }
       var withCredentials = es.withCredentials;
